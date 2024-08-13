@@ -1,27 +1,32 @@
 html {
   scroll-behavior: smooth;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700;
 }
 body {
   padding-top: 5rem;
 }
-.t3_1, .t3_2, .t3_3{
+.t3_1,
+.t3_2,
+.t3_3 {
   padding: 30px;
 }
-#about_me{
-  background-color: #DDC9BC;
+#about_me {
+  background-color: #ddc9bc;
 }
-#skills{
-  background-color:  #A3C6C4;
+#skills {
+  background-color: #a3c6c4;
 }
-#project  {
-  background-color:  #E2DAD6;
-}
-footer {
-  background-color:  #8E7C68;
+#project {
+  height: 1000px;
+  margin: auto;
+  background-color: #e2dad6;
 }
 
+footer {
+  background-color: #8e7c68;
+}
+/* 모바일 화면 */
 @media screen and (max-width: 950px) {
   #header-box > div {
     display: none;
@@ -32,49 +37,84 @@ footer {
     top: 20px;
     right: 20px;
   }
-  #menu-box > h1{
+  #menu-box > h1 {
     position: fixed;
     left: 10px;
     top: 0;
   }
-  .info{
+  .info {
     margin-bottom: 0;
     font-size: 20px;
   }
-  .info > p{
+  .info > p {
     font-size: 25px;
+  }
+  #project {
+    height: 1400px;
+  }
+  #pj1 {
+    width: 460px;
+    height: 600px;
+    border: solid 1px black;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  #pj2 {
+    width: 460px;
+    height: 600px;
+    border: solid 1px black;
+    margin: auto;
   }
 }
 
+/* 전체화면 */
 @media screen and (min-width: 950px) {
   #header-box {
     display: inline;
     position: fixed;
     width: 100%;
     text-align: left;
-
   }
   #header-box > div {
     font-size: 20px;
     margin: 5%;
     display: inline;
   }
-  #menu-box{
+  #menu-box {
     display: none;
   }
-  .t{
+  .t {
     display: flex;
-    
   }
-  .t3_1, .t3_2, .t3_3{
+  .t3_1,
+  .t3_2,
+  .t3_3 {
     margin: auto;
   }
-  .info{
+  .info {
     margin-bottom: 80px;
     font-size: 20px;
   }
-  .info > p{
+  .info > p {
     font-size: 25px;
+  }
+  #pj_wrapper {
+    display: flex;
+    justify-content: center;
+
+  }
+  #pj1 {
+    width: 450px;
+    height: 600px;
+    border: solid 1px black;
+    display: inline-block;
+    margin-right: 5vmax;
+  }
+  #pj2 {
+    width: 450px;
+    height: 600px;
+    border: solid 1px black;
+    display: inline-block;
   }
 }
 ul,
@@ -95,7 +135,7 @@ li {
   top: 100px;
   right: 0px;
 }
-.menubars > li{
+.menubars > li {
   margin-bottom: 20px;
 }
 header {
@@ -109,12 +149,12 @@ header {
   padding-top: 2rem;
 }
 
-.nav{
+.nav {
   margin-left: 0;
   padding: 20px;
 }
-.nav:hover{
-  background-color: #ED7458;
+.nav:hover {
+  background-color: #ed7458;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.7s;
@@ -126,8 +166,8 @@ header {
   font-size: 2rem;
   padding: 10px;
 }
-.nav_menu_a:hover{
-  background-color: #ED7458;
+.nav_menu_a:hover {
+  background-color: #ed7458;
   transition: all 0.7s;
 }
 
@@ -142,15 +182,12 @@ header {
   transition: all 0.7s;
 }
 
-
-
 #intro {
   width: 100%;
-  height: 100%;
+  height: 350px;
   position: relative;
   color: white;
   z-index: 1;
-  
 }
 #intro::after {
   content: "";
@@ -166,9 +203,8 @@ header {
 #info_tbl {
   height: 300px;
   width: 950px;
-
 }
-.main-content {
+.main_content {
   padding-top: 100px;
 }
 
@@ -176,6 +212,7 @@ header {
   width: 200px;
   height: 200px;
   margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .works_main {
@@ -208,11 +245,11 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
   color: black;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   transform: rotateY(180deg);
 }
 
-.works_back > .p_90{
+.works_back > .p_90 {
   background-color: #54d674;
   position: fixed;
   width: 100%;
@@ -222,7 +259,7 @@ header {
   align-items: center;
   justify-content: center;
 }
-.works_back > .p_70{
+.works_back > .p_70 {
   background-color: #54d674;
   position: fixed;
   width: 100%;
@@ -232,7 +269,7 @@ header {
   align-items: center;
   justify-content: center;
 }
-.works_back > .p_60{
+.works_back > .p_60 {
   background-color: #54d674;
   position: fixed;
   width: 100%;
@@ -242,10 +279,15 @@ header {
   align-items: center;
   justify-content: center;
 }
-#top{
+#top {
   position: fixed;
   right: 20px;
   top: 90%;
+}
+#top:hover {
+  background-color: #ed7458;
+  border-radius: 8px;
+  transition: all 0.7s;
 }
 #footer {
   color: black;
