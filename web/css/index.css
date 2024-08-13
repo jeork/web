@@ -184,9 +184,9 @@ header {
   transform-style: preserve-3d;
 }
 
-/* .works_container:hover .works_main {
+.works_container:hover .works_main {
   transform: rotateY(180deg);
-} */
+}
 
 .works_front img {
   position: absolute;
@@ -208,12 +208,12 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
   color: black;
-  background-color: #000;
+  background-color: #EEEEEE;
   transform: rotateY(180deg);
 }
 
 .works_back > .p_90{
-  background-color: chartreuse;
+  background-color: #54d674;
   position: fixed;
   width: 100%;
   height: 90%;
@@ -223,7 +223,7 @@ header {
   justify-content: center;
 }
 .works_back > .p_70{
-  background-color: chartreuse;
+  background-color: #54d674;
   position: fixed;
   width: 100%;
   height: 70%;
@@ -233,7 +233,7 @@ header {
   justify-content: center;
 }
 .works_back > .p_60{
-  background-color: chartreuse;
+  background-color: #54d674;
   position: fixed;
   width: 100%;
   height: 60%;

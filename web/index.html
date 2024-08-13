@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <header>
     <div style="display: inline">
-      <h1 style="display: inline; margin-left: 5px; cursor: default;">OJR Portfolio</h1>
+      <h1 style="display: inline; margin-left: 5px; cursor: default">
+        OJR Portfolio
+      </h1>
     </div>
     <div id="header-box">
       <div class="nav" onclick="location.href='#about_me';">about me</div>
@@ -22,7 +29,7 @@
       <label for="check-btn">
         <img src="css/img/meunicon.jpg" id="menuicon" />
       </label>
-      <ul class="menubars" style="text-align: right;">
+      <ul class="menubars" style="text-align: right">
         <li><a class="nav_menu_a" href="#about_me">about&nbsp;me</a></li>
         <li><a class="nav_menu_a" href="#skills">skills</a></li>
         <li><a class="nav_menu_a" href="#project">project</a></li>
@@ -32,10 +39,19 @@
   </header>
 
   <body>
+    <script>
+      $(function(){
+        // $('.works_container').click(function(){
+        //   $('.works_main').css({'transform' : 'rotateY(180deg)'});
+        // });
+        
+      });
+    </script>
     <div id="container">
       <div id="intro" class="main-content">
-        <h1 style="text-align: center">오제록</h1>
+        <h1 style="text-align: center; ">오제록</h1>
         <p>
+          자기소개 
           <br />
           <br />
           <br />
@@ -101,7 +117,7 @@
         <h1 style="text-align: center">skills</h1>
         <div class="t">
           <div class="t3_1">
-            <div class="works_container">
+            <div  class="works_container">
               <div class="works_main">
                 <div class="works_front">
                   <img src="css/img/html5.jpg" />
@@ -109,11 +125,12 @@
                 <div class="works_back">
                   <div class="p_90">
                     <p>HTML</p>
+                  
                   </div>
                 </div>
               </div>
             </div>
-            <div class="works_container" onclick="rotate()">
+            <div class="works_container">
               <div class="works_main">
                 <div class="works_front">
                   <img src="css/img/css3.jpg" />
@@ -140,7 +157,7 @@
                 </div>
               </div>
             </div>
-            <div class="works_container">
+            <div class="works_container" >
               <div class="works_main">
                 <div class="works_front">
                   <img src="css/img/sql.jpg" />

@@ -1,3 +1,4 @@
 function rotate(){
-    alert('test')
+    let dv = event.currentTarget;
+    
 }
